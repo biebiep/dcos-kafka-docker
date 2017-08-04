@@ -1,6 +1,8 @@
 # dcos-kafka-docker
 DCOS docker to deploy kafka in a scalable fashion.
 
+It needs a HOST network and 2 assigned ports.
+
 ## Configurable options:
 
 You can modify the kafka version here in the Dockerfile:
