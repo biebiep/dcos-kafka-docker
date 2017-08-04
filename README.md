@@ -1,7 +1,8 @@
 # dcos-kafka-docker
 DCOS docker to deploy kafka in a scalable fashion.
+You can freely scale the kafka instances up or down according to load.
 
-It needs a HOST network and 2 assigned ports.
+It needs a HOST network and 2 assigned ports (PORT0 is broker port, PORT1 is JMX port)
 
 ## Configurable options:
 
