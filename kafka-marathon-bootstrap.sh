@@ -11,6 +11,10 @@ echo "port=${PORT0}" >> $KAFKA_HOME/config/custom-server.properties
 echo "log.dir=/var/log/kafka/kafka-${broker_id}" >> $KAFKA_HOME/config/custom-server.properties
 echo "zookeeper.connect=${KAFKA_ZOOKEEPER_CONNECT}" >> $KAFKA_HOME/config/custom-server.properties
 
+#Non-essential configs:
+echo "delete.topic.enable=true" >> $KAFKA_HOME/config/custom-server.properties
+echo "auto.create.topics.enable=false"
+
 export JMX_PORT="${PORT1}"
 
 exec $KAFKA_HOME/bin/kafka-server-start.sh $KAFKA_HOME/config/custom-server.properties
