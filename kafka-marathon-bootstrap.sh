@@ -13,7 +13,7 @@ echo "zookeeper.connect=${KAFKA_ZOOKEEPER_CONNECT}" >> $KAFKA_HOME/config/custom
 
 #Non-essential configs:
 echo "delete.topic.enable=true" >> $KAFKA_HOME/config/custom-server.properties
-echo "auto.create.topics.enable=false"
+echo "auto.create.topics.enable=false" >> $KAFKA_HOME/config/custom-server.properties
 
 export JMX_PORT="${PORT1}"
 
