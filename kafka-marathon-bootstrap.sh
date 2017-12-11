@@ -18,6 +18,7 @@ echo "log.message.timestamp.type=LogAppendTime" >> $KAFKA_HOME/config/custom-ser
 echo "log.retention.ms=1200000" >> $KAFKA_HOME/config/custom-server.properties
 echo "default.replication.factor=3"  >> $KAFKA_HOME/config/custom-server.properties
 echo "num.partitions=300" >> $KAFKA_HOME/config/custom-server.properties
+echo "log.cleanup.interval.mins=1" >> $KAFKA_HOME/config/custom-server.properties
 
 export JMX_PORT="${PORT1}"
 
