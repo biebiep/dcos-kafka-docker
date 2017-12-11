@@ -15,7 +15,7 @@ echo "zookeeper.connect=${KAFKA_ZOOKEEPER_CONNECT}" >> $KAFKA_HOME/config/custom
 echo "delete.topic.enable=true" >> $KAFKA_HOME/config/custom-server.properties
 echo "auto.create.topics.enable=false" >> $KAFKA_HOME/config/custom-server.properties
 echo "log.message.timestamp.type=LogAppendTime" >> $KAFKA_HOME/config/custom-server.properties
-echo "log.retention.hours=4" >> $KAFKA_HOME/config/custom-server.properties
+echo "log.retention.ms=1200000" >> $KAFKA_HOME/config/custom-server.properties
 echo "default.replication.factor=3"  >> $KAFKA_HOME/config/custom-server.properties
 echo "num.partitions=300" >> $KAFKA_HOME/config/custom-server.properties
 
